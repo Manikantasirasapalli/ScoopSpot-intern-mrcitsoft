@@ -1,0 +1,215 @@
+body{
+    margin:0;
+    padding:0;
+}
+header{
+    background-color:white;
+    font-size:30px;
+    top:0;
+    height:16vh;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight:bold;
+    display: flex;
+    justify-content:space-between;
+    flex-direction:column;
+    position:fixed;
+    width:100%;
+    border:2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-top:10px
+}
+.logo{
+    text-align:center
+}
+.icons{
+    display:flex;
+    list-style:none;
+    font-size:19px;
+    text-align:left;
+
+    display: flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+}
+
+a {
+    color:rgb(84, 84, 84);
+    text-decoration: none;
+    transform: transition ease-in-out;
+}
+a:hover{
+    transition: 0.2s ease-in-out;
+    padding-bottom:0px;
+}
+.menu-btn{
+    background: transparent;
+    border:none;
+    color:black;
+    display:none;
+    padding-bottom:10px;
+    padding-right:10px
+}
+.close-menu{
+
+    padding:10px;
+    color:black;
+
+}
+#check{
+    display:none
+}
+@media screen and (max-width: 800px) {
+
+    .menu-btn{
+      display: block;
+    }
+    .menu{
+      flex-direction:column;
+      align-items:center;
+      justify-content: start;
+      width:35%;
+      height:100%;
+      position: fixed;
+      top:0vh;
+      right:1100%;
+      z-index:1;
+      background-color:cadetblue;
+      transition: all 0.2s ease-in-out;
+      padding-top:5vh;
+      padding-right:2vh;
+      text-align:center;
+      
+    }
+    .menu, .dropbtn{
+      gap:40px;
+    }
+    .menu-btn{display:block; position: relative; text-align:left; bottom:40px; left:10px}
+    .close-menu{position: relative; bottom:3vh;left:0vh}
+    #check:checked ~ .menu{left:0;}
+    hr{
+        display:none
+    }
+    header{
+        height:8vh;
+    }
+
+    .font{
+        font-size:15px;
+        text-align:left;
+        padding:25px
+    }
+    .sub{
+        width:550px;
+        text-align:left;
+    }
+}
+.home{
+    color:black;
+    border:solid 2px black;
+    border-radius:25px;
+    width:10vh;
+    transform: transition 0.2s ease-in-out;
+}
+.home:hover{
+    transition: 0.2s ease-in-out;
+    width:14vh;
+    border:solid 2px black;
+}
+
+.head{
+    width:100%;
+    text-align: center;
+    font-size:40px;
+    padding-top:160px;
+    height:auto;
+    color:black;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bold
+}
+.sub{
+    font-size: 15px;
+    padding:10px;
+    font-weight: normal;
+}
+.factors{
+    border:0.5px solid black;
+    height:40vh;
+    width:30vh;
+    border-radius:4px; 
+}
+.legal-notif{
+    border:0.5px solid black;
+    height:auto;
+    width:100vh;
+    text-align: center;
+    border-radius:4px;
+}
+@media screen and (max-width: 800px) {
+    .legal-notif{
+        margin-left:20vh;
+    }
+    .terms{
+        margin-left:10vh;
+    }
+}
+.terms{
+    padding:15px; 
+    height:auto;
+    width:100vh;
+    margin:30px 0px 0px 0px;
+    border-radius:4px;
+   
+}
+.p2{
+    padding:15px;
+    
+}
+.topic{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    padding:30px;
+    top:10px;
+    gap:30px;
+    
+}
+.factor-head{
+    padding:15px;
+    font-size:30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:left;
+}
+.factor-sub-head{
+    padding-top:10px;
+    font-size:20px;
+    font-family: Arial, Helvetica, sans-serif;
+    height:1vh;
+    text-align:left;
+}
+.social-icon{
+    gap:10px;
+}
+@media screen and (max-width:800px){
+    .factors{
+        margin:0;
+        height:60vh;
+
+    }
+    .legal-notif{
+        margin:10px;
+        height:auto;
+        width:70vh;
+    }
+    .head{
+        width:max-content;
+    }
+    .foot{
+        width:auto;
+    }
+    .font2{
+        float:left;
+        margin-left:-25vh;
+        width:30vh
+    }
+}
