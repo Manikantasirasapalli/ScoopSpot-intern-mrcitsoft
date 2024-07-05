@@ -1,0 +1,1 @@
+# ScoopSpot-intern-mrcitsoft
